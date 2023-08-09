@@ -11,10 +11,86 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <!--Internal Documents-->
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="../css/trips.css">
     <script src="../js/trips.js"></script>
 </head>
 <body>
+    <nav>
+        <a href="../index.html"><div class="nav-component"><p>About Us</p></div></a>
+        <a href="../index.html"><div class="logo nav-component"><img src="../assets/Logo_No_Text.svg"></div></a>
+        <a href="trips.html"><div class="nav-component"><p>Bookings</p></div></a>
+        <div class="contact-us"><p class="align-self-center">Contact Us</p></div>
+    </nav>
     
+    <div class="container">
+        <h1>Book A Trip</h1>
+        <h3>Spreca il tuo prezioso reddito e prenota uno dei nostri tanti viaggi di merda attraverso alcuni dei peggiori specchi d'acqua, maiale straniero con troppo tempo e troppi soldi</h3>
+        <form>
+            <h5>Filter</h5>
+            <input type="search" placeholder="Search">
+            <input type="date">
+            <select>
+                <option>Trip Duration</option>
+                <option>Short Trips (<= 5 days)</option>
+                <option>Long Trips (>5 days)</option>
+            </select>
+            <select>
+                <option>Destinations</option>
+                <option>Single Destination</option>
+                <option>Multi Destination</option>
+                <option>Round Trips</option>
+            </select>
+            <input type="checkbox">
+            <label for="vehicle1">Row Boat Specials</label>
+        </form>
+
+        <!-- --------------------------------------------------------- -->
+        <!-- Accordion -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    <input type="checkbox">
+                    Accordion Item #1
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <input type="checkbox">
+                        Accordion Item #2
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <input type="checkbox">
+                    Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
+            </div>
+        </div>
+
+        <button onclick="checkout()">Purchase Ticket</button>
+    </div>
+    <footer></footer>
 </body>
 </html>
