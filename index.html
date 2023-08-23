@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Libre+Baskerville&family=Nanum+Myeongjo:wght@700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
     <!--Internal Documents-->
     <link rel="stylesheet" href="css/main.css">
@@ -37,10 +38,15 @@
                                         <button class="hero-book-button">Book Now</button>
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div>
-
-                                    </div>
+                                <div class="col-4 weather" id="weatherOne">
+                                    <template id="weatherTemplate">
+                                      <div>
+                                        <p id="weatherDescription"></p>
+                                        <p>Temperature:</p><p id="weatherTemperature"></p>
+                                        <p>Wind Speed: </p><p id="weatherWind"></p>
+                                        <p>Humidity: </p><p id="weatherHumid"></p>
+                                      </div>
+                                    </template>
                                 </div>
                             </div>
                         </div>
@@ -52,17 +58,40 @@
             <div class="carousel-item active">
                 <div class="hero-img-1">
                     <div class="overlay">
-                        
+                      <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    
+                                        <h1 class="landing-title">Vada a bordo, cazzo!!</h1>
+        
+                                        <button class="hero-book-button">Book Now</button>
+                          
+                                </div>
+                            </div>
+                      </div>
                     </div>
                 </div>
                 <!-- <img src="..." class="d-block w-100" alt="..."> -->
             </div>
             <div class="carousel-item">
-                <div class="hero-img-1">
-                    <div class="overlay">
-                        
+              <div class="hero-img-2">
+                <div class="overlay">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="hero-col-8">
+                                    <h1 class="hero-title">SPAIN</h1>
+                                    <h3 class="hero-subtitle">Anche se faremo tappa a Barcellona, ​​non significa che l'esperienza della crociera sarà meno schifosa. Desidererai di aver imparato l'italiano in modo da poter capire quanto sia sbagliata la decisione che stai prendendo.</h3>
+                                    <button class="hero-book-button">Book Now</button>
+                                </div>
+                            </div>
+                            <div class="col-4 weather" id="weatherTwo">
+                                
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
                 <!-- <img src="..." class="d-block w-100" alt="..."> -->
             </div>
         </div>
