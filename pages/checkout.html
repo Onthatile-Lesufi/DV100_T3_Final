@@ -9,52 +9,48 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
 
     <!--Internal Documents-->
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/checkout.css">
     <script src="../js/checkout.js"></script>
 </head>
 <body>
     <nav>
-        <a href="../index.html"><div class="nav-component"><p>About Us</p></div></a>
         <a href="../index.html"><div class="logo nav-component"><img src="../assets/Logo_No_Text.svg"></div></a>
         <a href="trips.html"><div class="nav-component"><p>Bookings</p></div></a>
+        <a href="#"><div class="nav-component"><p>Cart</p></div></a>
+      
         <div class="contact-us"><p class="align-self-center">Contact Us</p></div>
     </nav>
     
     <div class="container">
+        <h2>Your Purchases</h2>
         <table class="table">
             <thead>
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">Trip Code</th>
+                <th scope="col">Location</th>
+                <th scope="col">Passengers Booked</th>
+                <th scope="col">Cost</th>
+                <th scope="col"> </th>
               </tr>
             </thead>
-            <tbody class="table-group-divider">
-              <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2">Larry the Bird</td>
-                <td>@twitter</td>
-              </tr>
+            <tbody class="table-group-divider" id="">
+              <template id="tripTemplate">
+                <tr>
+                  <th scope="row" id="code">itash</th>
+                  <td id="location">Italy</td>
+                  <td id="Passengers">3</td>
+                  <td id="cost">R1500</td>
+                  <td><button id="circleButton">-</button></td>
+                </tr>
+              </template>
             </tbody>
         </table>
 
-        <button>Book Trip</button>
+        <button id="book">Book Trip</button>
+        <button id="remove">Clear All</button>
     </div>
     
     <footer class="align-self-end"></footer>

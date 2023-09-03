@@ -1,6 +1,7 @@
 let destinations = ["Venice","Barcelona"];
 
 $(document).ready(function(){
+    $(".landing-title").text("Vada a bordo, cazzo!!");
     $.ajax({
         type: "GET",
         url: "https://api.openweathermap.org/data/2.5/weather?q=Venice&appid=a4d46b0a196de4ec2ed27b2798a45562",
